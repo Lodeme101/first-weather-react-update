@@ -1,23 +1,50 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import Weather from "./Weather";
+import WeatherForecast from "./WeatherForecast";
+import ReactAnimatedWeather from "react-animated-weather";
+
+import "./App.css";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className="container">
+        <header className="App-header">
+          <h1>Weather Application</h1>
+          <Weather />
+          <WeatherForecast />
+        </header>
+        <footer className="App-Footer">
+          <p>
+            This project was coded by{" "}
+            <a
+              href="https://github.com/Lodeme101"
+              target="_blank"
+              rel="noreferrer"
+            >
+              Lodemé Pendergraph{" "}
+            </a>{" "}
+            and is
+            <a
+              href="https://github.com/Lodeme101/first-weather-react-update"
+              target="_blank"
+              rel="noreferrer"
+            >
+              {" "}
+              open-sourced on GitHub{" "}
+            </a>
+            and{" "}
+            <a
+              href="https://voluble-pudding-e83bbe.netlify.app/"
+              target="_blank"
+              rel="noreferrer"
+            >
+              {" "}
+              hosted on Netlify
+            </a>
+          </p>
+        </footer>
+      </div>
     </div>
   );
 }
