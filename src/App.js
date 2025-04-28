@@ -14,7 +14,7 @@ export default function App() {
             <a
               href="https://github.com/Lodeme101"
               target="_blank"
-              rel="noreferrer"
+              rel="noopener noreferrer"
             >
               Lodemé Pendergraph{" "}
             </a>{" "}
@@ -22,7 +22,7 @@ export default function App() {
             <a
               href="https://github.com/Lodeme101/first-weather-react-update"
               target="_blank"
-              rel="noreferrer"
+              rel="noopener noreferrer"
             >
               {" "}
               open-sourced on GitHub{" "}
@@ -31,7 +31,7 @@ export default function App() {
             <a
               href="https://voluble-pudding-e83bbe.netlify.app/"
               target="_blank"
-              rel="noreferrer"
+              rel="noopener noreferrer"
             >
               {" "}
               hosted on Netlify
