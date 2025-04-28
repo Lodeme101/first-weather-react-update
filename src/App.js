@@ -1,20 +1,14 @@
 import React from "react";
 import Weather from "./Weather";
-import WeatherForecast from "./WeatherForecast";
-import ReactAnimatedWeather from "react-animated-weather";
-
 import "./App.css";
 
-function App() {
+export default function App() {
   return (
     <div className="App">
       <div className="container">
-        <header className="App-header">
-          <h1>Weather Application</h1>
-          <Weather />
-          <WeatherForecast />
-        </header>
-        <footer className="App-Footer">
+        <Weather defaultCity="Pretoria" />
+
+        <footer>
           <p>
             This project was coded by{" "}
             <a
@@ -48,5 +42,3 @@ function App() {
     </div>
   );
 }
-
-export default App;
